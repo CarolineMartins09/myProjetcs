@@ -1,10 +1,7 @@
-# myProjetcs
-Nesse repositorio arquivei meus principais projetos como estudante full stack.
-E alguns exercicios de fixação.
+# My Projetcs
 
-ENTRE ELES:
+**Repositorio para exercícios de fixação**
 
-- Astromatch um clone de aplicativos de relacionamento.</br>
-[Link surge]( http://erratic-vegetable.surge.sh/)
+*Conteúdo do Front End ao Back End.*
 
 
