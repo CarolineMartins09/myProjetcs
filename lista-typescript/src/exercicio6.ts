@@ -35,7 +35,7 @@ const listaClientes: conta[] = [
     { cliente: "Soter", saldoTotal: 1200, debitos: [] }
 ];
 
-const funcao6 = (lista: conta[]): conta[] => {
+const negativos = (lista: conta[]): conta[] => {
     lista.forEach((cliente) => {
         const totalDebitos = cliente.debitos.reduce((a, b) => a + b, 0);
         cliente.saldoTotal -= totalDebitos;
@@ -44,4 +44,4 @@ const funcao6 = (lista: conta[]): conta[] => {
     const contasNegativas = lista.filter((conta) => conta.saldoTotal < 0);
     return contasNegativas;
 };
-console.log("ex.6", funcao6(listaClientes));
+console.log(negativos(listaClientes));
