@@ -32,3 +32,12 @@ const usersList: user[] = [
     { name: "Adilson", email: "adilson@email.com", role: ROLE.USER },
     { name: "Carina", email: "carina@email.com", role: ROLE.ADMIN }
 ];
+
+const userAdmin = (list: user[]): string[] => {
+    const emailsList: string[] = list
+        .filter((user) => user.role === ROLE.ADMIN)
+        .map((user) => user.email);
+    return emailsList;
+};
+
+console.log(userAdmin(usersList));
