@@ -15,3 +15,9 @@ console.log("LISTA TYPESCRIPT --- EXERCICIO 6 ---");
 // 	{ cliente: "Artur", saldoTotal: 1800, debitos: [200, 300] },
 // 	{ cliente: "Soter", saldoTotal: 1200, debitos: [] }
 // ]
+
+type conta = {
+    cliente: string;
+    saldoTotal: number;
+    debitos: number[];
+};
