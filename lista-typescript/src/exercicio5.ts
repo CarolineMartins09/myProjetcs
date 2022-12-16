@@ -13,3 +13,13 @@ console.log("lISTA TYPESCRIPT --- EXERCICIO 5 ---");
 // 	{name: "Carina", email: "carina@email.com", role: "admin"}      
 // ] 
 
+enum ROLE {
+    ADMIN = "admin",
+    USER = "user"
+};
+
+type user = {
+    name: string;
+    email: string;
+    role: ROLE;
+};
