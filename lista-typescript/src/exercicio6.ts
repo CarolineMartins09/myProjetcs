@@ -16,6 +16,10 @@ console.log("LISTA TYPESCRIPT --- EXERCICIO 6 ---");
 // 	{ cliente: "Soter", saldoTotal: 1200, debitos: [] }
 // ]
 
+// Pensando em aumentar seu lucros, o banco quer identificar possíveis clientes precisando de empréstimos.
+// Dessa forma, a sua tarefa é criar uma função que receba este array como parâmetro,
+// atualize o saldo total descontando todos os débitos e retorne apenas os clientes com saldo negativo.
+
 type conta = {
     cliente: string;
     saldoTotal: number;
@@ -30,3 +34,14 @@ const listaClientes: conta[] = [
     { cliente: "Artur", saldoTotal: 1800, debitos: [200, 300] },
     { cliente: "Soter", saldoTotal: 1200, debitos: [] }
 ];
+
+const funcao6 = (lista: conta[]): conta[] => {
+    lista.forEach((cliente) => {
+        const totalDebitos = cliente.debitos.reduce((a, b) => a + b, 0);
+        cliente.saldoTotal -= totalDebitos;
+        cliente.debitos = [];
+    });
+    const contasNegativas = lista.filter((conta) => conta.saldoTotal < 0);
+    return contasNegativas;
+};
+console.log("ex.6", funcao6(listaClientes));
