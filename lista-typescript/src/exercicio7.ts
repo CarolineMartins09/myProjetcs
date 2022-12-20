@@ -5,10 +5,10 @@ console.log("LISTA TYPESCRIPT --- EXERCICIO 7 ---");
 // A pessoa desenvolvedora anterior a você chegou a criar uma função que ajusta os preços
 // para o formato brasileiro, mas não chegou a implementa-la:
 
-// const ajustaPreco = (preco :number): string => {
-// 	const valorAjustado: string = preco.toFixed(2).replace('.', ',')
-// 	return "R$ "+valorAjustado
-// }
+const ajustaPreco = (preco :number): string => {
+	const valorAjustado: string = preco.toFixed(2).replace('.', ',')
+	return "R$ "+valorAjustado
+}
 
 // O seguinte array traz o estoque atual da empresa:
 
@@ -41,3 +41,18 @@ const estoque: produto[] = [
     { nome: "Plumbus", quantidade: 13, valorUnitario: 140.44 },
     { nome: "Pokebola", quantidade: 200, valorUnitario: 99.9915 }
 ];
+
+const estoqueOrdenado = (lista: produto[]): produto[] => {
+    lista.forEach(
+      (item) => (item.valorUnitario = ajustaPreco(item.valorUnitario as number))
+    );
+  
+    const listaOrdernada: produto[] = lista.sort(
+      (a, b) => a.quantidade - b.quantidade
+    );
+  
+    return listaOrdernada;
+  };
+  
+  
+  console.log(estoqueOrdenado(estoque));
