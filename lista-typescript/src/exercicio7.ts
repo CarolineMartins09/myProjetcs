@@ -21,3 +21,8 @@ console.log("LISTA TYPESCRIPT --- EXERCICIO 7 ---");
 // 	{ nome: "Plumbus", quantidade: 13, valorUnitario: 140.44},
 // 	{ nome: "Pokebola", quantidade: 200, valorUnitario: 99.9915}
 // ]
+
+// Aproveitando a função já feita, faça uma nova função que receba o array de estoque como parâmetro, 
+// use a função ajustaPreco para corrigir os preços e retorne a lista de estoque ordenada 
+// pela quantidade de cada produto. 
+
