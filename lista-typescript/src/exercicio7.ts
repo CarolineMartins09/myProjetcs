@@ -26,3 +26,8 @@ console.log("LISTA TYPESCRIPT --- EXERCICIO 7 ---");
 // use a função ajustaPreco para corrigir os preços e retorne a lista de estoque ordenada 
 // pela quantidade de cada produto. 
 
+type produto = {
+    nome: string;
+    quantidade: number;
+    valorUnitario: number | string;
+};
