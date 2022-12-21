@@ -31,7 +31,7 @@ function fatorial(anagrama:string):number{
         return 1
     }else{
         for(let i = contagemLetras -1 ; i > 1; i--){
-                palavra *= i
+            contagemLetras *= i
                }
     }
 
@@ -39,4 +39,5 @@ return contagemLetras
 
 }
 
-console.log(fatorial("mesa"));
+console.log(`Anagramada da palavra Mesa é ${fatorial("mesa")}`);
+console.log(fatorial("Labenu"));
