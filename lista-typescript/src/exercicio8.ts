@@ -39,5 +39,5 @@ return contagemLetras
 
 }
 
-console.log(`Anagramada da palavra Mesa é ${fatorial("mesa")}`);
-console.log(fatorial("Labenu"));
+console.log(`Quantidade de anagramadas da palavra Mesa é ${fatorial("mesa")}`);
+console.log(`Quantidade de anagramadas da palavra Labenu é ${fatorial("Labenu")}`);
